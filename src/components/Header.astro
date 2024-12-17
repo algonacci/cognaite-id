@@ -1,7 +1,7 @@
 ---
-import Navigation from '../components/Navigation.astro'
-import { SkipLinks } from 'accessible-astro-components'
-import { Icon } from 'astro-icon/components'
+import Navigation from "../components/Navigation.astro";
+import { SkipLinks } from "accessible-astro-components";
+import { Icon } from "astro-icon/components";
 ---
 
 <header>
@@ -10,14 +10,14 @@ import { Icon } from 'astro-icon/components'
     <li class="menu-item">
       <a href="/">Home</a>
     </li>
-    <li class="menu-item">
+    <!-- <li class="menu-item">
       <a href="/blog/">Blog</a>
-    </li>
+    </li> -->
   </Navigation>
 </header>
 
 <style lang="scss" is:global>
-  @use '../assets/scss/base/outline' as *;
+  @use "../assets/scss/base/outline" as *;
 
   header {
     .type-icon a {
