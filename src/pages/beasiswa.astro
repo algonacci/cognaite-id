@@ -1,0 +1,57 @@
+---
+import DefaultLayout from "../layouts/DefaultLayout.astro";
+---
+
+<DefaultLayout title="Beasiswa">
+  <div class="container">
+    <section
+      class="py-16 px-4 sm:px-6 lg:px-8"
+      style="background-color: var(--background);"
+    >
+      <div class="max-w-7xl mx-auto text-center">
+        <h1 class="text-4xl font-extrabold" style="color: var(--font-color);">
+          Program Beasiswa
+        </h1>
+        <p class="mt-4 text-lg" style="color: var(--font-color);">
+          Kami menyediakan program beasiswa untuk mendukung talenta-talenta luar
+          biasa mencapai impian mereka. Ikuti syarat dan ketentuan yang berlaku
+          untuk mendaftar.
+        </p>
+      </div>
+
+      <div class="mt-12 max-w-8xl mx-auto">
+        <div
+          class="shadow rounded-lg p-6"
+          style="background-color: var(--neutral-background);"
+        >
+          <h2 class="text-2xl font-bold" style="color: var(--font-color);">
+            Syarat dan Ketentuan
+          </h2>
+          <ul
+            class="mt-4 list-disc list-inside"
+            style="color: var(--font-color);"
+          >
+            <li>
+              Berkeinginan kuat untuk mengikuti dan menyelesaikan program sampai
+              akhir.
+            </li>
+            <li>
+              Membayar uang komitmen sebesar 50% dari harga program yang nanti
+              akan dikembalikan setelah program selesai.
+            </li>
+            <li>Mengisi formulir pendaftaran secara lengkap.</li>
+          </ul>
+          <p class="mt-4" style="color: var(--font-color);">
+            Untuk informasi lebih lanjut dan pendaftaran, klik tombol di bawah
+            ini.
+          </p>
+          <div class="mt-6 text-center">
+            <a href="/link-pendaftaran" class="button" target="_blank">
+              Daftar Sekarang
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</DefaultLayout>

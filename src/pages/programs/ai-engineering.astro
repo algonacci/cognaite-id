@@ -1,139 +1,198 @@
 ---
 import DefaultLayout from "../../layouts/DefaultLayout.astro";
-import Hero from "../../components/Hero.astro";
-import Feature from "../../components/Feature.astro";
-import Counter from "../../components/Counter.astro";
-import ContentMedia from "../../components/ContentMedia.astro";
 import { Accordion, AccordionItem } from "accessible-astro-components";
 ---
 
 <DefaultLayout title="AI Engineering Bootcamp">
-  <Hero
-    title="AI Engineering Bootcamp"
-    subtitle="Belajar dan kembangkan keterampilan AI Anda dengan bootcamp komprehensif kami."
-    ctaText="Daftar Sekarang"
-    ctaLink="/register"
-    backgroundImage="/ai-hero.jpg"
-  />
-
-  <section class="my-64">
-    <div class="container">
-      <h2 class="mb-16 text-5xl">Mengapa Memilih Program Kami?</h2>
-      <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
-        <Feature icon="mdi:account-tie" title="Instruktur Berpengalaman">
-          Belajar langsung dari para ahli yang telah bekerja pada proyek AI di
-          industri terkemuka.
-        </Feature>
-        <Feature icon="mdi:update" title="Kurikulum Terbaru">
-          Kurikulum kami dirancang mengikuti perkembangan terbaru dalam AI dan
-          pembelajaran mesin.
-        </Feature>
-        <Feature icon="mdi:briefcase" title="Portfolio Profesional">
-          Buat proyek nyata yang dapat Anda tampilkan kepada calon pemberi
-          kerja.
-        </Feature>
-        <Feature icon="mdi:assignment" title="Tugas Praktis">
-          Kuasai konsep AI dengan latihan langsung yang relevan dengan dunia
-          kerja.
-        </Feature>
-        <Feature icon="mdi:network" title="Jaringan Alumni">
-          Terhubung dengan komunitas alumni untuk peluang kerja dan kolaborasi.
-        </Feature>
-        <Feature icon="mdi:certificate" title="Sertifikasi">
-          Dapatkan sertifikat yang mengakui keahlian Anda di bidang AI.
-        </Feature>
-      </div>
+  <section
+    class="py-16 px-4 sm:px-6 lg:px-8"
+    style="background-color: var(--background);"
+  >
+    <div class="max-w-5xl mx-auto text-center">
+      <h1 class="text-4xl font-extrabold" style="color: var(--font-color);">
+        AI Engineering Bootcamp
+      </h1>
+      <p class="mt-4 text-lg" style="color: var(--font-color);">
+        Program intensif untuk mempelajari teknik dan praktek terbaik dalam
+        pengembangan aplikasi berbasis AI. Cocok untuk profesional dan pemula
+        yang ingin menjadi AI Engineer handal.
+      </p>
     </div>
-  </section>
 
-  <ContentMedia imgSrc="/ai-classroom.jpg">
-    <h2>Jadilah AI Engineer Profesional</h2>
-    <p class="text-2xl">
-      Pelajari keterampilan teknis mendalam di bidang AI, termasuk pembelajaran
-      mesin, pengolahan data, dan pemrosesan bahasa alami, untuk mempersiapkan
-      karir Anda di industri teknologi yang terus berkembang.
-    </p>
-  </ContentMedia>
-
-  <ContentMedia imgSrc="/ai-future.jpg" reverseImg={true}>
-    <h2>Bangun Masa Depan Anda dengan Teknologi AI</h2>
-    <p class="text-2xl">
-      Bergabunglah dengan generasi baru profesional AI yang mampu menciptakan
-      solusi inovatif untuk tantangan dunia nyata. Mulailah perjalanan Anda
-      menuju masa depan yang menjanjikan.
-    </p>
-  </ContentMedia>
-
-  <section class="my-64">
-    <div class="container grid grid-cols-1 gap-12 md:grid-cols-2">
-      <div class="flex flex-col items-start gap-4">
-        <h2 class="text-6xl">FAQ</h2>
-        <p class="text-2xl">
-          Temukan jawaban atas pertanyaan umum tentang program AI Engineering
-          Bootcamp kami.
-        </p>
-        <a class="button" href="/faq">Hubungi Tim Kami</a>
+    <div class="mt-12 max-w-4xl mx-auto">
+      <div
+        class="shadow rounded-lg p-6"
+        style="background-color: var(--neutral-background);"
+      >
+        <h2 class="text-2xl font-bold" style="color: var(--font-color);">
+          Mentor
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-4">
+          <div class="flex items-center">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbDe4Puv0dyl_LMVddgS3Lb3bHUBsraVdthA&s"
+              alt="John Doe"
+              class="w-16 h-16 rounded-full mr-4"
+            />
+            <div>
+              <p class="text-lg font-bold" style="color: var(--font-color);">
+                John Doe
+              </p>
+              <p class="text-sm" style="color: var(--font-color);">
+                AI Expert dengan pengalaman 10 tahun di industri.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <img
+              src="https://female-founders.org/wp-content/uploads/2022/10/Female_Founders_20221953-scaled-e1665747894906.jpg"
+              alt="Jane Smith"
+              class="w-16 h-16 rounded-full mr-4"
+            />
+            <div>
+              <p class="text-lg font-bold" style="color: var(--font-color);">
+                Jane Smith
+              </p>
+              <p class="text-sm" style="color: var(--font-color);">
+                Data Scientist dan Machine Learning Specialist.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="space-content">
+
+      <div
+        class="shadow rounded-lg p-6 mt-8"
+        style="background-color: var(--neutral-background);"
+      >
+        <h2 class="text-2xl font-bold" style="color: var(--font-color);">
+          Materi
+        </h2>
+        <ul
+          class="mt-4 list-disc list-inside"
+          style="color: var(--font-color);"
+        >
+          <li>Pengantar AI dan Machine Learning.</li>
+          <li>
+            Implementasi Deep Learning menggunakan TensorFlow dan PyTorch.
+          </li>
+          <li>Natural Language Processing (NLP) dan Computer Vision.</li>
+          <li>Deployment model AI ke dalam aplikasi nyata.</li>
+        </ul>
+      </div>
+
+      <div
+        class="shadow rounded-lg p-6 mt-8"
+        style="background-color: var(--neutral-background);"
+      >
+        <h2 class="text-2xl font-bold" style="color: var(--font-color);">
+          Jadwal
+        </h2>
+        <table
+          class="mt-4 w-full text-left border-collapse"
+          style="color: var(--font-color);"
+        >
+          <thead>
+            <tr>
+              <th class="border-b py-2">Minggu</th>
+              <th class="border-b py-2">Materi</th>
+              <th class="border-b py-2">Tanggal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border-b py-2">1</td>
+              <td class="border-b py-2">Pengantar AI dan Machine Learning</td>
+              <td class="border-b py-2">1 Maret 2025</td>
+            </tr>
+            <tr>
+              <td class="border-b py-2">2</td>
+              <td class="border-b py-2">Implementasi Deep Learning</td>
+              <td class="border-b py-2">8 Maret 2025</td>
+            </tr>
+            <tr>
+              <td class="border-b py-2">3</td>
+              <td class="border-b py-2">Natural Language Processing</td>
+              <td class="border-b py-2">15 Maret 2025</td>
+            </tr>
+            <tr>
+              <td class="border-b py-2">4</td>
+              <td class="border-b py-2">Computer Vision</td>
+              <td class="border-b py-2">22 Maret 2025</td>
+            </tr>
+            <tr>
+              <td class="border-b py-2">5</td>
+              <td class="border-b py-2">Deployment Model AI</td>
+              <td class="border-b py-2">29 Maret 2025</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <section class="my-20">
         <Accordion>
           <AccordionItem
-            name="requirements"
-            title="Apa persyaratan untuk mengikuti program ini?"
+            name="exclusive"
+            title="Apa saja persyaratan untuk mengikuti bootcamp ini?"
           >
             <p>
-              Program ini terbuka untuk semua individu yang memiliki minat dalam
-              AI. Pengetahuan dasar tentang pemrograman sangat membantu, tetapi
-              tidak wajib.
+              Bootcamp ini terbuka untuk semua orang yang memiliki minat dalam
+              AI, baik pemula maupun yang sudah memiliki pengalaman. Pengetahuan
+              dasar tentang pemrograman akan sangat membantu, tetapi tidak
+              wajib.
             </p>
           </AccordionItem>
           <AccordionItem
-            name="duration"
-            title="Berapa lama durasi program ini?"
+            name="exclusive"
+            title="Berapa lama durasi bootcamp ini?"
           >
             <p>
-              Program ini berlangsung selama 8 minggu dengan jadwal fleksibel
-              yang dirancang untuk mendukung pembelajaran intensif.
+              Bootcamp ini berlangsung selama 45-60 hari, dengan sesi intensif
+              yang dirancang untuk memberikan pemahaman mendalam tentang AI dan
+              pembelajaran mesin.
             </p>
           </AccordionItem>
           <AccordionItem
-            name="curriculum"
-            title="Apa saja yang akan dipelajari dalam bootcamp?"
+            name="exclusive"
+            title="Apa yang akan saya pelajari selama bootcamp?"
           >
             <p>
-              Anda akan mempelajari dasar-dasar AI, pembelajaran mesin, data
-              science, serta mengerjakan proyek nyata untuk membangun portofolio
-              Anda.
+              Anda akan mempelajari dasar-dasar AI, pembelajaran mesin,
+              pemrosesan bahasa alami, dan teknik data science. Selain itu, Anda
+              akan mengerjakan proyek nyata untuk membangun portofolio Anda.
             </p>
           </AccordionItem>
           <AccordionItem
-            name="career-support"
-            title="Apakah ada dukungan karir setelah program selesai?"
+            name="exclusive"
+            title="Apakah ada dukungan karir setelah bootcamp?"
           >
             <p>
-              Ya, kami menyediakan bimbingan karir, simulasi wawancara, dan
-              akses ke jaringan profesional untuk membantu Anda mendapatkan
-              pekerjaan di bidang AI.
+              Ya, kami menyediakan dukungan karir yang mencakup bimbingan dalam
+              mencari pekerjaan, persiapan wawancara, dan akses ke jaringan
+              alumni kami.
             </p>
           </AccordionItem>
-          <AccordionItem name="registration" title="Bagaimana cara mendaftar?">
+          <AccordionItem
+            name="exclusive"
+            title="Bagaimana cara mendaftar untuk bootcamp ini?"
+          >
             <p>
-              Anda dapat mendaftar langsung melalui situs web kami dengan
-              mengisi formulir pendaftaran yang tersedia.
+              Anda dapat mendaftar melalui situs web kami dengan mengisi
+              formulir pendaftaran. Setelah itu, tim kami akan menghubungi Anda
+              untuk langkah selanjutnya.
             </p>
           </AccordionItem>
         </Accordion>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <section class="mb-32 mt-64">
-    <div class="container">
-      <h2 class="mb-16 text-6xl">Pencapaian Kami</h2>
-      <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4">
-        <Counter count="50+" title="Proyek Nyata" sub="Dikerjakan" />
-        <Counter count="20+" title="Mentor Berpengalaman" sub="Pengajar" />
-        <Counter count="500+" title="Lulusan" sub="Bergabung" />
-        <Counter count="5+" title="Tahun" sub="Beroperasi" />
+      <div class="mt-6 text-center">
+        <a
+          href="/link-pendaftaran-bootcamp"
+          class="inline-block text-lg font-medium py-3 px-6 rounded-lg shadow hover:opacity-90 focus:ring"
+          style="background-color: var(--action-color); color: var(--neutral-background);"
+        >
+          Daftar Sekarang
+        </a>
       </div>
     </div>
   </section>
