@@ -1,0 +1,193 @@
+---
+import DefaultLayout from "../../layouts/DefaultLayout.astro";
+import { Accordion, AccordionItem } from "accessible-astro-components";
+---
+
+<DefaultLayout title="Computer Vision Bootcamp">
+  <section
+    class="py-16 px-4 sm:px-6 lg:px-8"
+    style="background-color: var(--background);"
+  >
+    <div class="max-w-5xl mx-auto text-center">
+      <h1 class="text-4xl font-extrabold" style="color: var(--font-color);">
+        Computer Vision Bootcamp
+      </h1>
+      <p class="mt-4 text-lg" style="color: var(--font-color);">
+        Program intensif untuk mempelajari teknik dan praktek terbaik dalam
+        pengembangan aplikasi berbasis Computer Vision. Cocok untuk profesional dan pemula
+        yang ingin menjadi ahli dalam bidang Computer Vision.
+      </p>
+    </div>
+
+    <div class="mt-12 max-w-4xl mx-auto">
+      <div
+        class="shadow rounded-lg p-6"
+        style="background-color: var(--neutral-background);"
+      >
+        <h2 class="text-2xl font-bold" style="color: var(--font-color);">
+          Mentor
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-4">
+          <div class="flex items-center">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbDe4Puv0dyl_LMVddgS3Lb3bHUBsraVdthA&s"
+              alt="John Doe"
+              class="w-16 h-16 rounded-full mr-4"
+            />
+            <div>
+              <p class="text-lg font-bold" style="color: var(--font-color);">
+                John Doe
+              </p>
+              <p class="text-sm" style="color: var(--font-color);">
+                Computer Vision Expert dengan pengalaman 10 tahun di industri.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <img
+              src="https://female-founders.org/wp-content/uploads/2022/10/Female_Founders_20221953-scaled-e1665747894906.jpg"
+              alt="Jane Smith"
+              class="w-16 h-16 rounded-full mr-4"
+            />
+            <div>
+              <p class="text-lg font-bold" style="color: var(--font-color);">
+                Jane Smith
+              </p>
+              <p class="text-sm" style="color: var(--font-color);">
+                Data Scientist dan Computer Vision Specialist.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="shadow rounded-lg p-6 mt-8"
+        style="background-color: var(--neutral-background);"
+      >
+        <h2 class="text-2xl font-bold" style="color: var(--font-color);">
+          Materi
+        </h2>
+        <ul
+          class="mt-4 list-disc list-inside"
+          style="color: var(--font-color);"
+        >
+          <li>Pengantar Computer Vision dan Image Processing.</li>
+          <li>
+            Implementasi algoritma Computer Vision menggunakan OpenCV dan TensorFlow.
+          </li>
+          <li>Object Detection dan Image Segmentation.</li>
+          <li>Deployment model Computer Vision ke dalam aplikasi nyata.</li>
+        </ul>
+      </div>
+
+      <div
+        class="shadow rounded-lg p-6 mt-8"
+        style="background-color: var(--neutral-background);"
+      >
+        <h2 class="text-2xl font-bold" style="color: var(--font-color);">
+          Jadwal
+        </h2>
+        <table
+          class="mt-4 w-full text-left border-collapse"
+          style="color: var(--font-color);"
+        >
+          <thead>
+            <tr>
+              <th class="border-b py-2">Minggu</th>
+              <th class="border-b py-2">Materi</th>
+              <th class="border-b py-2">Tanggal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border-b py-2">1</td>
+              <td class="border-b py-2">Pengantar Computer Vision dan Image Processing</td>
+              <td class="border-b py-2">1 Maret 2025</td>
+            </tr>
+            <tr>
+              <td class="border-b py-2">2</td>
+              <td class="border-b py-2">Implementasi algoritma Computer Vision</td>
+              <td class="border-b py-2">8 Maret 2025</td>
+            </tr>
+            <tr>
+              <td class="border-b py-2">3</td>
+              <td class="border-b py-2">Object Detection dan Image Segmentation</td>
+              <td class="border-b py-2">15 Maret 2025</td>
+            </tr>
+            <tr>
+              <td class="border-b py-2">4</td>
+              <td class="border-b py-2">Deployment Model Computer Vision</td>
+              <td class="border-b py-2">22 Maret 2025</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <section class="my-20">
+        <Accordion>
+          <AccordionItem
+            name="exclusive"
+            title="Apa saja persyaratan untuk mengikuti bootcamp ini?"
+          >
+            <p>
+              Bootcamp ini terbuka untuk semua orang yang memiliki minat dalam
+              Computer Vision, baik pemula maupun yang sudah memiliki pengalaman. Pengetahuan
+              dasar tentang pemrograman akan sangat membantu, tetapi tidak
+              wajib.
+            </p>
+          </AccordionItem>
+          <AccordionItem
+            name="exclusive"
+            title="Berapa lama durasi bootcamp ini?"
+          >
+            <p>
+              Bootcamp ini berlangsung selama 30-45 hari, dengan sesi intensif
+              yang dirancang untuk memberikan pemahaman mendalam tentang Computer Vision.
+            </p>
+          </AccordionItem>
+          <AccordionItem
+            name="exclusive"
+            title="Apa yang akan saya pelajari selama bootcamp?"
+          >
+            <p>
+              Anda akan mempelajari dasar-dasar Computer Vision, image processing,
+              object detection, dan teknik deployment. Selain itu, Anda
+              akan mengerjakan proyek nyata untuk membangun portofolio Anda.
+            </p>
+          </AccordionItem>
+          <AccordionItem
+            name="exclusive"
+            title="Apakah ada dukungan karir setelah bootcamp?"
+          >
+            <p>
+              Ya, kami menyediakan dukungan karir yang mencakup bimbingan dalam
+              mencari pekerjaan, persiapan wawancara, dan akses ke jaringan
+              alumni kami.
+            </p>
+          </AccordionItem>
+          <AccordionItem
+            name="exclusive"
+            title="Bagaimana cara mendaftar untuk bootcamp ini?"
+          >
+            <p>
+              Anda dapat mendaftar melalui situs web kami dengan mengisi
+              formulir pendaftaran. Setelah itu, tim kami akan menghubungi Anda
+              untuk langkah selanjutnya.
+            </p>
+          </AccordionItem>
+        </Accordion>
+      </section>
+
+      <div class="mt-6 text-center">
+        <a
+          href="/link-pendaftaran-bootcamp"
+          class="inline-block text-lg font-medium py-3 px-6 rounded-lg shadow hover:opacity-90 focus:ring"
+          style="background-color: var(--action-color); color: var(--neutral-background);"
+        >
+          Daftar Sekarang
+        </a>
+      </div>
+    </div>
+  </section>
+</DefaultLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main pages -->
+  <url>
+    <loc>https://cognaite.id/</loc>
+    <lastmod>2025-01-16</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://cognaite.id/beasiswa/</loc>
+    <lastmod>2025-01-16</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Program pages -->
+  <url>
+    <loc>https://cognaite.id/programs/ai-agents-101/</loc>
+    <lastmod>2025-01-16</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cognaite.id/programs/ai-engineering/</loc>
+    <lastmod>2025-01-16</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cognaite.id/programs/computer-vision/</loc>
+    <lastmod>2025-01-16</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cognaite.id/programs/data-analytics/</loc>
+    <lastmod>2025-01-16</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cognaite.id/programs/data-engineering/</loc>
+    <lastmod>2025-01-16</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cognaite.id/programs/llm-101/</loc>
+    <lastmod>2025-01-16</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cognaite.id/programs/rag-101/</loc>
+    <lastmod>2025-01-16</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog section -->
+  <url>
+    <loc>https://cognaite.id/blog/</loc>
+    <lastmod>2025-01-16</lastmod>
+    <priority>0.8</priority>
+  </url>
+</urlset>

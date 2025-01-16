@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+Allow: /programs/
+Allow: /blog/
+Allow: /beasiswa/
+
+# Disallow admin or private paths if they exist
+Disallow: /admin/
+Disallow: /private/
+Disallow: /draft/
+
+# Sitemap
+Sitemap: https://cognaite.id/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 10

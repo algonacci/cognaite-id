@@ -7,10 +7,10 @@ import Footer from "../components/Footer.astro";
 
 const {
   title = "CognAIte.id",
-  description = "CognAIte.id adalah platform pembelajaran AI yang bertujuan untuk membantu Anda menjadi ahli AI.",
+  description = "CognAIte.id adalah sekolah AI Indonesia dengan platform pembelajaran AI yang bertujuan untuk membantu Anda menjadi ahli AI.",
   url = "https://cognaite.id",
   image = "https://cognaite.id/banner.png",
-  author = "Eric Julianto",
+  author = "Sekolah AI Indonesia",
 } = Astro.props;
 ---
 
@@ -32,6 +32,38 @@ const {
       image={image}
       author={author}
     />
+    <!-- Schema.org markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://cognaite.id/#organization",
+          "name": "CognAIte.id",
+          "url": "https://cognaite.id",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://cognaite.id/banner.png"
+          },
+          "description": "CognAIte.id adalah sekolah AI Indonesia dengan platform pembelajaran AI yang bertujuan untuk membantu Anda menjadi ahli AI.",
+          "sameAs": [
+            "https://www.linkedin.com/company/cognaite",
+            "https://instagram.com/cognaite.id"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://cognaite.id/#website",
+          "url": "https://cognaite.id",
+          "name": "CognAIte.id",
+          "publisher": {
+            "@id": "https://cognaite.id/#organization"
+          },
+          "description": description
+        }
+      ]
+    })}>
+    </script>
   </head>
   <body>
     <Header />
